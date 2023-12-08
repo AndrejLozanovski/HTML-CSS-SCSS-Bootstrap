@@ -1,0 +1,30 @@
+.section-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
+.row[id] {
+  padding-top: 70px;
+  margin-top: -55px;
+}
+
+.bg-indigo {
+  background-color: rgb(74, 28, 190);
+}
+
+.bg-grey {
+  background-color: rgb(61, 61, 61);
+}
+
+img {
+  max-width: 100%;
+}
