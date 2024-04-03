@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.small {
+  font-size: small;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.bg-lightgray {
+  background-color: rgb(248, 248, 248);
+}
+
+.color-lightgray {
+  color: rgb(100, 100, 100);
+}
+
+.bg-darkgray {
+  background-color: rgb(68, 76, 79);
+}
+
+.btn {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 10px;
+  color: white;
+  background-color: rgb(39, 149, 188);
+  padding: 13px 25px;
+  border-radius: 3px;
+}
+
+/* Banner */
+.banner {
+  background-image: linear-gradient(
+      rgba(61, 67, 68, 0.7),
+      rgba(61, 67, 68, 0.7)
+    ),
+    url("./images/hero.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .banner {
+    background-position: left;
+  }
+}
+
+.banner nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.banner nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .banner nav .wrapper {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner nav .wrapper .logo {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}
+
+.banner .wrapper a {
+  color: white;
+}
+
+.banner .wrapper ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 425px) {
+  .banner nav .wrapper ul {
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+
+.banner .wrapper ul li {
+  display: inline-block;
+  font-size: small;
+}
+
+.banner .wrapper ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.banner .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .banner .title {
+    width: 70%;
+  }
+}
+
+.banner .title p {
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.banner .title h1 {
+  margin-bottom: 10px;
+}
+
+/* Banner */
+
+/* Pictures content */
+.content .content_title {
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .content .content_title {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .content .content_title {
+    width: 70%;
+  }
+}
+
+.content .content_title hr {
+  width: 20%;
+  margin-top: 30px;
+  border: 1px solid rgb(39, 149, 188);
+}
+@media (max-width: 425px) {
+  .content .content_title hr {
+    width: 70%;
+  }
+}
+
+.content .pictures .pictures_40_60 {
+  display: flex;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+  .content .pictures {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_40_60 {
+    flex-wrap: wrap;
+    height: 650px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 425px) {
+  .content .pictures .pictures_40_60 {
+    flex-wrap: wrap;
+    height: 600px;
+    padding-bottom: 0;
+  }
+}
+
+.content .pictures .pictures_40_60 .picture40 {
+  flex-basis: 40%;
+  background-image: url("./images/coast.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_40_60 .picture40 {
+    flex-basis: 100%;
+    margin-right: -20px;
+    margin-bottom: 40px;
+  }
+}
+
+.content .pictures .pictures_40_60 .picture60 {
+  flex-basis: 60%;
+  background-image: url("./images/island.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_40_60 .picture60 {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.content .pictures .pictures_60_40 {
+  display: flex;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_60_40 {
+    flex-wrap: wrap;
+    height: 650px;
+    padding-bottom: 0px;
+  }
+}
+
+.content .pictures .pictures_60_40 .picture60 {
+  flex-basis: 60%;
+  background-image: url("./images/balloon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_60_40 .picture60 {
+    flex-basis: 100%;
+    margin-right: -20px;
+    margin-bottom: 40px;
+  }
+}
+
+.content .pictures .pictures_60_40 .picture40 {
+  flex-basis: 40%;
+  background-image: url("./images/mountain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .content .pictures .pictures_60_40 .picture40 {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Pictures content */
+
+/* Features and services */
+
+.feature_services .feature_services_title {
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .feature_services .feature_services_title {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .feature_services .feature_services_title {
+    width: 70%;
+  }
+}
+
+.feature_services .feature_services_title hr {
+  width: 20%;
+  margin-top: 30px;
+  border: 1px solid rgb(39, 149, 188);
+}
+
+@media (max-width: 425px) {
+  .feature_services .feature_services_title hr {
+    width: 70%;
+  }
+}
+
+.feature_services .services .services_inner {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .feature_services .services .services_inner {
+    display: block;
+  }
+}
+
+.feature_services .services .services_inner .services_item {
+  flex-basis: 33.333%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .feature_services .services .services_inner .services_item {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .feature_services .services .services_inner .services_item {
+    width: 70%;
+  }
+}
+
+.feature_services .services .services_inner .services_item h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feature_services .services .services_inner .services_item i {
+  color: rgb(39, 149, 188);
+}
+
+/* Features and services */
+
+/* Newsletter */
+.newsletter .newsletter_title {
+  width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .newsletter .newsletter_title {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .newsletter .newsletter_title {
+    width: 70%;
+  }
+}
+
+.newsletter .newsletter_title hr {
+  width: 20%;
+  margin-top: 30px;
+  border: 1px solid rgb(39, 149, 188);
+}
+@media (max-width: 425px) {
+  .newsletter .newsletter_title hr {
+    width: 70%;
+  }
+}
+
+.newsletter .subscribe {
+  text-align: center;
+}
+
+.newsletter .subscribe form input {
+  width: 30%;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .newsletter .subscribe form input {
+    width: 80%;
+    margin-right: -15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter .subscribe form button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 425px) {
+  .newsletter .subscribe form input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .newsletter .subscribe form button {
+    width: 70%;
+  }
+}
+
+/* Newsletter */
+/* Footer socials */
+.socials {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .socials {
+    width: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  .socials {
+    width: 90%;
+  }
+}
+
+.socials a {
+  color: white;
+}
+
+.socials .social_icons {
+  margin-bottom: 20px;
+}
+
+.socials .social_icons a:not(:last-child) {
+  margin-right: 7px;
+}
+
+.socials .footer_text p {
+  color: rgb(175, 175, 175);
+  text-transform: uppercase;
+}
+
+/* Footer socials */
